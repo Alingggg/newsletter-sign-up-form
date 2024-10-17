@@ -99,6 +99,7 @@ body {
     &__error {
         right: 1.5rem;
         font-size: 0.8rem;
+        font-weight: bold;
         line-height: 1rem;
         color: red;
     }
@@ -110,10 +111,6 @@ body {
         border: 1px solid $grey;
         border-radius: 0.5rem;
         outline: none;
-
-        &:hover {
-            cursor: pointer;
-        }
 
         &:valid {
             border: 2px solid $dark-slate-grey;
@@ -156,5 +153,125 @@ body {
     &__button {
         @include button-design();
         margin-top: auto;
+    }
+}
+
+@media (min-width: 400px) {
+
+    main {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signup {
+        display: flex;
+        min-width: 43rem;
+        max-width: 43rem;
+        min-height: 28.5rem;
+        max-height: 28.5rem;
+        border-radius: 1.5rem;
+        padding: 1rem;
+        margin-left: 0.5rem;
+
+        &__image {
+            &-mobile {
+                display: none;
+            }
+
+            &-desktop {
+                display: block;
+                order: 2;
+                margin-right: -3.5rem;
+            }
+        }
+
+        &__content {
+            order: 1;
+            margin-left: 1rem;
+            padding: 1rem;
+        }
+
+        &__title {
+            font-size: 2.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        &__description {
+            font-size: 0.7rem;
+        }
+
+        &__list {
+            position: relative;
+            font-size: 0.7rem;
+            margin-top: 0.7rem;
+            &-item {
+                margin-left: -0.9rem;
+                line-height: 1.5rem;
+
+                &::before {
+                    transform: scale(0.7);
+                    margin-left: -1.8rem;
+                }
+            }
+        }
+
+        &__label-container{
+            margin-top: 1.5rem;
+        }
+
+        &__label {
+            font-size: 0.5rem;
+        }
+
+        &__error {
+            font-size: 0.5rem;
+            font-weight: bold;
+        }
+
+        &__input {
+            font-size: 0.7rem;
+            height: 2rem;
+            padding: 1.1rem;
+        }
+
+        &__button {
+            font-size: 0.7rem;
+            height: 2.5rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .success {
+        min-height: 23rem;
+        max-height: 23rem;
+        min-width: 22.5rem;
+        max-width: 22.5rem;
+        border-radius: 1.5rem;
+        padding: 2.8rem;
+        padding-top: 2.3rem;
+        
+        &__icon {
+            width: 16%;
+        }
+
+        &__message {
+            margin-top: 1.8rem;
+            line-height: 2.5rem;
+        }
+
+        &__details {
+            font-size: 0.74rem;
+            margin-top: 1rem;
+        }
+
+        &__button {
+            font-size: 0.7rem;
+            height: 2.5rem;
+            margin-top: 1.5rem;
+            padding: 1rem;
+        }
+        
     }
 }
