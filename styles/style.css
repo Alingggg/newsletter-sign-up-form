@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/Roboto-Regular.ttf");
+}
+.hidden {
+  display: none !important;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: hsl(235, 18%, 26%);
+  margin: 0;
+}
+
+.signup {
+  min-height: 100vh;
+  min-width: 100%;
+  max-width: 100%;
+  background-color: white;
+}
+.signup__image-mobile {
+  width: 100%;
+}
+.signup__image-desktop {
+  display: none;
+}
+.signup__content {
+  color: hsl(234, 29%, 20%);
+  padding: 0 1.5rem 1.5rem;
+}
+.signup__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.signup__list {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.signup__list-item {
+  list-style: none;
+}
+.signup__list-item::before {
+  position: absolute;
+  left: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  content: "";
+  background-image: url("/assets/images/icon-list.svg");
+  background-repeat: no-repeat;
+}
+.signup__label-container {
+  display: flex;
+  justify-content: space-between;
+}
+.signup__label-container {
+  height: 1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.4rem;
+}
+.signup__label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1rem;
+}
+.signup__error {
+  right: 1.5rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: red;
+}
+.signup__input {
+  width: 100%;
+  height: 3.5rem;
+  padding: 1.5rem;
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 0.5rem;
+  outline: none;
+}
+.signup__input:hover {
+  cursor: pointer;
+}
+.signup__input:valid {
+  border: 2px solid hsl(234, 29%, 20%);
+  color: hsl(234, 29%, 20%);
+  background-color: white;
+}
+.signup__input:invalid {
+  border: 2px solid red;
+  color: rgba(255, 0, 0, 0.7);
+  background-color: rgba(255, 0, 0, 0.1);
+}
+.signup__button {
+  width: 100%;
+  height: 3.5rem;
+  margin-top: 1.5rem;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  border-radius: 0.5rem;
+  border: none;
+}
+.signup__button:active {
+  background-color: hsl(4, 100%, 67%);
+}
+.signup__button:hover {
+  cursor: pointer;
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  color: hsl(234, 29%, 20%);
+  background-color: white;
+  min-height: 100vh;
+  padding: 1.5rem;
+  padding-top: 8rem;
+}
+.success__icon {
+  width: 20%;
+}
+.success__message {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+}
+.success__button {
+  width: 100%;
+  height: 3.5rem;
+  margin-top: 1.5rem;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: auto;
+}
+.success__button:active {
+  background-color: hsl(4, 100%, 67%);
+}
+.success__button:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
