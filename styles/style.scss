@@ -150,6 +150,10 @@ body {
         line-height: 3rem;
     }
 
+    &__details {
+        word-wrap: break-word;
+    }
+
     &__button {
         @include button-design();
         margin-top: auto;
@@ -245,7 +249,6 @@ body {
 
     .success {
         min-height: 23rem;
-        max-height: 23rem;
         min-width: 22.5rem;
         max-width: 22.5rem;
         border-radius: 1.5rem;
