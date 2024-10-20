@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Roboto-Regular';
-    src: url("/assets/fonts/Roboto-Regular.ttf");
+    src: url("../assets/fonts/Roboto-Regular.ttf");
 }
 
 $tomato: hsl(4, 100%, 67%);
@@ -73,7 +73,7 @@ body {
                 width: 2rem;
                 height: 2rem;
                 content: "";
-                background-image: url("/assets/images/icon-list.svg");
+                background-image: url("../assets/images/icon-list.svg");
                 background-repeat: no-repeat;
             }
         }
